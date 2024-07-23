@@ -14,39 +14,39 @@ import {
 // 数据库的连接
 // 创建临时文件
 beforeAll(() => {
-  console.log("before all");
+  // console.log("before all");
   return () => {
     //afterAll
   };
 });
 
 beforeEach(() => {
-  console.log("before Each");
+  // console.log("before Each");
   return () => {
     //afterEach
   };
 });
 
 it("first", () => {
-  console.log("first");
+  // console.log("first");
 });
 it("second", () => {
-  console.log("second");
+  // console.log("second");
 });
 
 afterEach(() => {
-  console.log("after each");
+  // console.log("after each");
 });
 
 describe("sub", () => {
   beforeEach(() => {
-    console.log("before Each");
+    // console.log("before Each");
   });
   it("first sub", () => {
-    console.log("first sub");
+    // console.log("first sub");
   });
   afterEach(() => {
-    console.log("after each");
+    // console.log("after each");
   });
 });
 
@@ -54,6 +54,6 @@ describe("sub", () => {
 // 数据库断开连接
 // 临时文件需要删除
 afterAll(() => {
-  console.log("after all");
+  // console.log("after all");
 });
 //2.在什么时候用

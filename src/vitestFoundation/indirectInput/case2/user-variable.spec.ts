@@ -3,7 +3,7 @@ import { tellName } from "./user-variable";
 
 vi.mock("./config.ts", async (importOrginal) => {
   const config = await importOrginal();
-  console.log(config);
+  // console.log(config);
   return {
     ...(config as any),
     name: "c",
